@@ -1,0 +1,6 @@
+<ng-container *ngIf="user">
+  <td>{{ user.firstname }}</td>
+  <td>{{ user.name }}</td>
+  <td directiveHover>{{ user.email }}</td>
+  <td><button type="button" (click)="onClickIsAdmin()">{{ isAdminText }}</button></td>
+</ng-container>

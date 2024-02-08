@@ -1,0 +1,15 @@
+<table>
+  <tr>
+    <th>Prénom</th>
+    <th>Nom</th>
+    <th>Email</th>
+    <th>Admin</th>
+  </tr>
+  <tr
+    *ngFor="let user of listUsers"
+    userComponent
+    [user]="user"
+    (isAdmin)="onClickIsAdmin($event)"
+    [class.isAdmin]="user.isAdmin"
+  ></tr>
+</table>

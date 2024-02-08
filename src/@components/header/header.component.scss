@@ -1,0 +1,29 @@
+.header {
+  background-color: rgb(212, 78, 78);
+  padding: 0.25 0.5rem;
+  position: sticky;
+  top: 0;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    padding-left: 0;
+
+    li {
+      margin-left: 2rem;
+
+      a,
+      span {
+        color: white;
+        text-decoration: none;
+
+        &.active {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<form>
+  <input
+    type="text"
+    (focus)="onActionFocus()" 
+    (blur)="onActionBlur()" 
+    (keyup)="onActionKeyup()"
+    [class.bordered]="hasFocus"
+    #message
+  />
+  <button
+    type="button"
+    (click)="onActionClick()"
+    [disabled]="message.value === ''"
+  >
+    Envoyer
+  </button>
+</form>
+<p>My Action : {{ myAction }}</p>
+<p>{{ message.value }}</p>
